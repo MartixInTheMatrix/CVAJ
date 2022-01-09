@@ -46,7 +46,6 @@ client.guilds.cache.forEach((g)=>{
     });
 }
 
-
 }
 
 
