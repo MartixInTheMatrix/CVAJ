@@ -11,3 +11,7 @@ const db = require('./util/db')
 
 loadEvents(client)
 db.init()
+
+/**
+ * Dev by martix
+ */
