@@ -11,7 +11,6 @@ const COMMANDS = {
         BAN: {
             name: 'ban',
             description: 'Bannir un utilisateur du serveur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('ban')
             .setDescription('Bannir un utilisateur du serveur')
@@ -29,7 +28,6 @@ const COMMANDS = {
         TEMPBAN: {
             name: 'tempban',
             description: 'Bannir temporairement un utilisateur du serveur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('tempban')
             .setDescription('Bannir temporairement un utilisateur du serveur')
@@ -52,7 +50,6 @@ const COMMANDS = {
         KICK: {
             name: 'kick',
             description: 'Expulser un utilisateur du serveur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('kick')
             .setDescription('Expulser un utilisateur du serveur')
@@ -71,7 +68,6 @@ const COMMANDS = {
         LOCK: {
             name: 'lock',
             description: 'Verouille le salon dans lequel la commande est tapée',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('lock')
             .setDescription('Vérouille le salon dans lequel la commande est tapée')
@@ -79,7 +75,6 @@ const COMMANDS = {
         UNLOCK: {
             name: 'unlock',
             description: 'Dévérouille le salon dans lequel la commande est tapée',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('unlock')
             .setDescription('Dévérouille le salon dans lequel la commande est tapée')
@@ -87,7 +82,6 @@ const COMMANDS = {
         WARN: {
             name: 'warn',
             description: 'Avertir un utilisateur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('warn')
             .setDescription('Avertir un utilisateur')
@@ -105,7 +99,6 @@ const COMMANDS = {
         SANCTIONS: {
             name: 'sanctions',
             description: 'Consulter l\'historique de sanctions d\'un utilisateur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('sanctions')
             .setDescription('Consulter l\'historique de sanctions d\'un utilisateur')
@@ -118,7 +111,6 @@ const COMMANDS = {
         CLEAR: {
             name: 'clear',
             description: 'Supprimer un certain nombre de messages',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('clear')
             .setDescription('Supprimer un certain nombre de messages')
@@ -131,7 +123,6 @@ const COMMANDS = {
         MUTE: {
             name: 'mute',
             description: 'Rendre muet un utilisateur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('mute')
             .setDescription('Rendre muet un utilisateur')
@@ -149,7 +140,6 @@ const COMMANDS = {
         UNMUTE: {
             name: 'unmute',
             description: 'Révoquer le mute d\'un utilisateur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('unmute')
             .setDescription('Révoquer le mute d\'un utilisateur')
@@ -162,7 +152,6 @@ const COMMANDS = {
         PARTIALBAN: {
             name: 'partial-ban',
             description: 'Bannir partiellement un utilisateur du serveur',
-            staffOnly: true,
             interaction: new SlashCommandBuilder()
             .setName('partial-ban')
             .setDescription('Bannir partiellement un utilisateur du serveur')
