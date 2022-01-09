@@ -6,7 +6,7 @@ module.exports = {
     id: '798511994147700738',
     guildID: '764192790887792640',
     logID: '882567841663045673',
-    DBCONNECTION: 'mongodb+srv://CVAJ:CVAJDEV@cvaj.pudrj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+    DBCONNECTION: 'mongodb+srv://CVAJ:CVAJDEV@cvaj.pudrj.mongodb.net/base?retryWrites=true&w=majority',
     StaffID: '776038246714966016',
     AdoID: '678990746400981002',
     AdulteID: '797558482861162537',

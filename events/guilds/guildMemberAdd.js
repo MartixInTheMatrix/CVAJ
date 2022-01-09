@@ -1,15 +1,17 @@
 
 module.exports = async (Client, member) => {
-    if(!Client.getUser(member)){
-        await Client.createUser(member)
+    if(member.user.bot)return;
+    if(! await Client.getUser(member)){
+        Client.createUser(member)
     }
+
     let d = '';
     let bool = true;
     if(member.user.createdAt - Date.now() < 1000 * 60 * 60 * 24 * 7){
         d = d + `\n\n> L'utilisateur a un compte trop récent, compte créé le \`${member.user.createdAt}\``
         bool = false
     }
-    let data = await Client.getUser(member).muted
+    let data = await Client.getUser(member)
     if(data){
         if(data.muted){
             d = d + `\n\n> L'utilisateur a rejoint alors qu'il est muet sur le serveur`

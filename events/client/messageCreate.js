@@ -1,8 +1,8 @@
 
 module.exports = async (Client, message) => {
-    if(!Client.getUser(message.member)){
-        await Client.createUser(message.member)
-
+    if(message.member.user.bot)return;
+    if(! await Client.getUser(message.member)){
+        Client.createUser(message.member)
     }
 
 }

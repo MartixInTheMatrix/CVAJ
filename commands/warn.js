@@ -8,9 +8,9 @@ module.exports.interaction = async (Client, interaction) => {
     let member = interaction.guild.members.cache.get(interaction.options._hoistedOptions[0].value)
     let reason = interaction.options._hoistedOptions[1].value
 
-    let dbUser = await Client.getUser(member) || await Client.createUser(member)
+    let dbUser = await Client.getUser(member) || Client.createUser(member)
     if(!dbUser) {
-        await Client.createUser(member)
+        Client.createUser(member)
         interaction.reply({embeds:[Client.error('Exceptionnellement cet utilisateur n\'avait pas de compte, veuillez réessayer.')]})
         
     }else{

@@ -72,7 +72,6 @@ module.exports = Client => {
             level: 0
         });
             userCreated.save().then(m => console.log(`BotLog :  Nouvel utilisateur -> ${member.user.username}`));
-            return Client.getUser(member)
         };
     
         Client.deleteUser = async member => {

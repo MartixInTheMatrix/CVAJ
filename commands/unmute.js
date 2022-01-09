@@ -6,7 +6,7 @@ const { COMMANDS } = require("../util/commands");
 module.exports.interaction = async (Client, interaction) => {
     let member = interaction.guild.members.cache.get(interaction.options._hoistedOptions[0].value)
 
-    let dbUser = await Client.getUser(member) || await Client.createUser(member)
+    let dbUser = await Client.getUser(member) || Client.createUser(member)
     if(!dbUser) {
         return interaction.reply({embeds:[Client.error('Exceptionnellement cet utilisateur n\'avait pas de compte, veuillez réessayer.')]})
         
